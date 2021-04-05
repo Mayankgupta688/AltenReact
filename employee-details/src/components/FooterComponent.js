@@ -1,3 +1,3 @@
-export function FooterComponent() {
+export default function FooterComponent() {
   return <h2>This is footer Component....</h2>
 }
