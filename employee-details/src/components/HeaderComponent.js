@@ -1,7 +1,7 @@
 export default function HeaderComponent(props) {
   debugger;
   function getData() {
-    return 10;
+    return 20;
   } 
 
   return (
