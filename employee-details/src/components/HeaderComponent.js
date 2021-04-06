@@ -1,17 +1,24 @@
 import React from "react";
+import "../css/headerIndex.css";
 
 export default function HeaderComponent(props) {
-  
+  debugger;
+
   function getData() {
     return 20;
   } 
 
+  var styleObject = {
+    color: "green",
+    padding: "20px"
+  }
+
   return (
-    <div>
-      <h1>This is Header</h1>
+    <div class="header">
+      <h1 style={styleObject}>This is Header {props.userName}</h1>
       <h2>This is Other Class</h2>
       <div>
-        <p>Hello All....</p>
+        <p style={{color: "pink", border: "1px solid red", padding: "10px"}}>Hello All....</p>
       </div>
     </div>
   )

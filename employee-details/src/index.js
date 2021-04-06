@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppComponent from "./containers/AppComponent";
+import StylingComponent from "./components/StylingComponent";
 
-ReactDOM.render(<AppComponent userName="Mayank Gupta"></AppComponent>, document.getElementById("root"));
+
+debugger;
+
+ReactDOM.render((
+  <div>
+    <StylingComponent headerOneColor="yellow" headerTwoColor="brown" headerThreeColor="grey"></StylingComponent><hr/>
+    <StylingComponent headerOneColor="blue" headerTwoColor="green" headerThreeColor="aqua"></StylingComponent>
+  </div>
+), document.getElementById("root"));
