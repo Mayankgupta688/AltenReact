@@ -3,7 +3,7 @@ import HeaderComponent from "../components/HeaderComponent";
 import FooterComponent from "../components/FooterComponent";
 import ContentComponent from "../components/ContentComponent";
 
-export default function AppComponent() {
+export default function AppComponent(props) {
     return (
         <div>
             <HeaderComponent></HeaderComponent>
