@@ -8,10 +8,12 @@ export default function HeaderComponent(props) {
     return 20;
   } 
 
+
   var styleObject = {
     color: "green",
     padding: "20px"
   }
+
 
   return (
     <div class="header">
