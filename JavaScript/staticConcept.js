@@ -17,7 +17,7 @@ class Employee {
     }
 }
 
-Employee.prototype.randomValue = 20;
+Employee.prototype.randomValue = 20;  
 debugger;
 var emp = new Employee("Mayank Gupta", 30);
 
