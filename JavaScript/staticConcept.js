@@ -18,7 +18,6 @@ class Employee {
 }
 
 Employee.prototype.randomValue = 20;  
-debugger;
 var emp = new Employee("Mayank Gupta", 30);
 
 console.log(emp.name);

@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TimerComponent from "./components/TimerComponent";
+import ComponentDidMountComponent from "./components/ComponentDidMountComponent";
 
-ReactDOM.render(<TimerComponent></TimerComponent>, document.getElementById("root"));
+ReactDOM.render(<ComponentDidMountComponent userName="Mayank"></ComponentDidMountComponent>, document.getElementById("root"));
