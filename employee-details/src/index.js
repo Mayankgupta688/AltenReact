@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ComponentDidMountComponent from "./components/ComponentDidMountComponent";
+import WorkingWithEvents from "./components/WorkingWithEvents";
 
-ReactDOM.render(<ComponentDidMountComponent userName="Mayank"></ComponentDidMountComponent>, document.getElementById("root"));
+ReactDOM.render(<WorkingWithEvents></WorkingWithEvents>, document.getElementById("root"));

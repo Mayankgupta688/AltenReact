@@ -11,6 +11,26 @@ export default class LifeCycleComponents extends React.Component {
         } 
     }
 
+    getSnapshotBeforeUpdate() {
+        
+    }
+
+    static getDerivedStateFromError() {
+
+    }
+
+    componentDidCatch() {
+
+    }
+
+    shouldComponentUpdate() {
+        return true;
+    }
+
+    static getDerivedStateFromProps() {
+
+    }
+
     componentDidMount() {
         debugger;
         this.setState({
@@ -26,11 +46,14 @@ export default class LifeCycleComponents extends React.Component {
                 reRenderCount: this.state.reRenderCount + 1
             })
         }
-        
     }
 
     render() {
         debugger;
         return <h1>Counter Value is: {this.state.counter} {this.state.reRenderCount}</h1>
+    }
+
+    componentWillUnmount() {
+
     }
 }
