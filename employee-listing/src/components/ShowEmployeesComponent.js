@@ -39,7 +39,6 @@ export default class ShowEmployeesComponent extends React.Component {
     }
 
     getUpdatedValue = (event) => {
-        debugger;
         var filterData = event.target.value;
 
         this.setState({
@@ -50,7 +49,6 @@ export default class ShowEmployeesComponent extends React.Component {
     }
 
     deleteEmployee = (userId) => {
-        debugger;
         Axios.delete("http://localhost:8000/employees/" + userId).then((response) => {
             Axios.get("http://localhost:8000/employees").then((response) => {
                 this.setState({
@@ -79,7 +77,6 @@ export default class ShowEmployeesComponent extends React.Component {
     }
 
     updateCode = (event) => {
-        debugger;
         this.setState({
             [event.target.name]: event.target.value
         })
