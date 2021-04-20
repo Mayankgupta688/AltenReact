@@ -8,7 +8,11 @@ export default class ShowEmployeesComponent extends React.Component {
             employeeList: [],
             filterList: [],
             userName: "Mayank",
-            userId: "100"
+            userId: "100",
+            newUserData: {
+                userAge: "",
+                userName: ""
+            }
         }
     }
 
@@ -61,12 +65,7 @@ export default class ShowEmployeesComponent extends React.Component {
 
     submitData = () => {
         debugger;
-        Axios.post("http://localhost:8000/employees", {
-            id: this.state.userId,
-            name: this.state.userName,
-            createdAt: "Now",
-            avatar: "Sample"
-        }).then((response) => {
+        Axios.post("http://localhost:8000/employees", this.state.newUserData).then((response) => {
             Axios.get("http://localhost:8000/employees").then((response) => {
                 this.setState({
                     employeeList: response.data,

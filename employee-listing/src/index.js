@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import ClickComponent from "./functional/ClickComponent";
+import GrandParent from "./components/workingWithContextUpdated";
 
-ReactDOM.render(<ClickComponent></ClickComponent>, document.getElementById("root"))
+ReactDOM.render(<GrandParent></GrandParent>, document.getElementById("root"))
